@@ -67,6 +67,8 @@ When GitHub is chosen as the hosting option, users are directed to install the G
 
 After fetching repositories, a list of repositories is displayed to the user on the frontend.
 
+**A Glimpse of Our Creation**: Visit our Frontend at [https://xerocodee-fullstack-assignment.netlify.app/](https://xerocodee-fullstack-assignment.netlify.app/) and dive into the backend api at [https://xerocodee-e5rc.onrender.com](https://xerocodee-e5rc.onrender.com).  You can also explore the source code of our Frontend on [GitHub](https://github.com/DarshanAnandu/Xerocode-Frontend/tree/master) and the Backend on [GitHub](https://github.com/DarshanAnandu/Xerocode-Backend/tree/master).
+
 ---
 
 This README provides an overview of the frontend part of the Full Stack Development Task. For more detailed instructions and code explanations, refer to the actual codebase and comments within the project files.
@@ -76,7 +78,3 @@ If you have any questions or need further assistance, please feel free to reach 
 Happy coding!
 
 ---
-
-Remember to replace `<repository-url>` with the actual URL of your repository.
-
-Feel free to customize this README based on your project's specifics and requirements. This sample README covers the major aspects of your frontend application and aims to provide clear instructions for anyone setting up and using the frontend of your project.

@@ -17,7 +17,7 @@ const Main = () => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await axios.get(`https://xerocodeeassignment.onrender.com/options/selected/data/${_id}`);
+                const response = await axios.get(`https://xerocodee-e5rc.onrender.com/type/select`);
                 if (response.status === 200) {
                     setHosting(response.data.selectedOptionsData.hosting)
                     setSteps(response.data.selectedOptionsData.steps)
@@ -48,7 +48,7 @@ const Main = () => {
 
     const DataSave = async () => {
         try {
-            const response = await axios.post(`https://xerocodeeassignment.onrender.com/options/selected/${_id}`, { steps, intro, hosting, option, hostingOptions });
+            const response = await axios.post(`https://xerocodee-e5rc.onrender.com/type/select`, { steps, intro, hosting, option, hostingOptions });
             if (response.status === 200) {
                 return true;
             }
@@ -63,20 +63,20 @@ const Main = () => {
             const githubId = localStorage.getItem("githubId");
             if (githubId !== "undefined" && githubId != null) {
 
-                const response = await axios.get(`https://xerocodeeassignment.onrender.com/options/repositories/${githubId}`)
-                if(response.status === 200){
+                const response = await axios.get(`https://xerocodee-e5rc.onrender.com/type/repo`)
+                if (response.status === 200) {
                     setRepo(response.data.repositories)
                 }
-                else if(response.status === 201){
+                else if (response.status === 201) {
                     alert(response.messsage);
                 }
-                else{
+                else {
                     console.log("error");
                 }
             }
             else {
-                
-                (window.location.href = `https://xerocodeeassignment.onrender.com/auth/github`);
+
+                (window.location.href = `https://xerocodee-e5rc.onrender.com/github`);
             }
         }
 
@@ -220,7 +220,7 @@ const Main = () => {
                                                 hostingOptions === 'github' ? <>
                                                     <div className="h-40 overflow-y-scroll py-2">
                                                         {
-                                                            repo.map((item)=>(
+                                                            repo.map((item) => (
                                                                 <Link to={item.clone_url} target="__blank" className="flex gap-5 border py-1 px-3 hover:bg-red-100"
                                                                 >
                                                                     <h1><span className="font-bold">Repo Name </span>: {item.name}</h1>
