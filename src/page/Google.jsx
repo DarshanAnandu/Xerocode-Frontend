@@ -7,7 +7,7 @@ const Google = () => {
     useEffect(() => {
         const UserDataWithToken = async () => {
             try {
-                const response = await axios.get(`https://xerocodeeassignment.onrender.com/options/${_id}`);
+                const response = await axios.get(`https://xerocodee-e5rc.onrender.com/google/callback`);
                 if (response.status === 200) {
                     navigate(`/home/${_id}`);
                 }

@@ -1,12 +1,12 @@
-import Template from "../components/Tamplate"
-const HomePage = () => {
+import Base from "../components/Base"
+const Home = () => {
     return (
         <>
             <div className="flex flex-col items-center justify-center w-full h-screen bg-blue-200" >
-                <Template/>
+                <Base />
             </div>
         </>
     )
 }
 
-export default HomePage
+export default Home

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import imageSrc from '../assets/bgImage.png';
+import imageSrc from '../assets/bgLogin.png';
 import logo from '../assets/logo.png'
-import Vector from '../assets/Vector.jpg'
+import Vector from '../assets/image1.jpg';
 import SignUp from './SignUp';
 import Login from './Login';
 
@@ -12,10 +12,10 @@ export default function Template() {
     const [lastName, setLastName] = useState("");
     console.log(signUp);
     const AuthWithGithub = async () => {
-        (window.location.href = `https://xerocodeeassignment.onrender.com/auth/github`);
+        (window.location.href = `https://xerocodee-e5rc.onrender.com/github`);
     }
     const AuthWithGoogle = () => {
-        (window.location.href = `https://xerocodeeassignment.onrender.com/auth/google`);
+        (window.location.href = `https://xerocodee-e5rc.onrender.com/google`);
     }
     return (
         <div className="bg-white flex rounded-tr-2xl rounded-bl-2xl pt-4">
@@ -54,13 +54,18 @@ export default function Template() {
                                         src={'https://cdn-icons-png.flaticon.com/512/25/25231.png'} />
                                 </button>
                             </div>
-                            <div className="w-56 h-[19px] mx-auto"><span className="text-slate-950 text-opacity-50 text-sm font-normal leading-[21px] ">
-                                Already have an Account ?
-                            </span>
-                                <span className="text-blue-600 text-sm font-medium cursor-pointer"
-                                    onClick={() => { setFormType(!formType) }}
-                                >{formType === true ? ("Sign Up") : ("Log in")}</span>
+                            <div className="w-56 h-[19px] mx-auto">
+                                <span className="text-slate-950 text-opacity-50 text-sm font-normal leading-[21px]">
+                                    Already have an Account?{" "}
+                                </span>
+                                <span
+                                    className="text-blue-600 text-sm font-medium cursor-pointer ml-1"
+                                    onClick={() => setFormType(!formType)}
+                                >
+                                    {formType ? "Log in" : "Sign Up"}
+                                </span>
                             </div>
+
                         </div>
                         <div className='border-l-2 flex w-1/2 items-center justify-center'>
                             <div className='flex flex-col justify-center items-center'>

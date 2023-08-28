@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 
-const Welcome = () => {
+const Main = () => {
     const [steps, setSteps] = useState(1);
     const [option, setOptions] = useState('');
     const [intro, setIntro] = useState('');
@@ -256,4 +256,4 @@ const Welcome = () => {
     )
 }
 
-export default Welcome
+export default Main

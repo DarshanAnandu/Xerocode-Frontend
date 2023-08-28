@@ -10,7 +10,7 @@ const Github = () => {
             
             localStorage.setItem("githubId", _id);
             try {
-                const response = await axios.get(`https://xerocodeeassignment.onrender.com/options/${_id}`);
+                const response = await axios.get(`https://xerocodee-e5rc.onrender.com/github/callback`);
                 if (response.status === 200) {
                     navigate(`/home/${_id}`);
                 }
@@ -26,7 +26,7 @@ const Github = () => {
     })
     return (
         <>
-            <h1>Wait for some time server speed are slow.. auto redirect after some time....</h1>
+            
         </>
 
     )
